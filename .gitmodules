@@ -1,0 +1,3 @@
+[submodule "pica"]
+	path = pica
+	url = https://github.com/pictools/pica/
