@@ -185,6 +185,8 @@ endif(MINGW)
 
 add_library(zlib STATIC ${ZLIB_SRCS} ${ZLIB_ASMS} ${ZLIB_PUBLIC_HDRS} ${ZLIB_PRIVATE_HDRS})
 
+target_include_directories(zlib PUBLIC ${CMAKE_CURRENT_BINARY_DIR})
+
 if(UNIX)
     # On unix-like platforms the library is almost always called libz
    set_target_properties(zlib PROPERTIES OUTPUT_NAME z)

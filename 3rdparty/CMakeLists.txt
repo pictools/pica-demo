@@ -6,6 +6,8 @@ add_subdirectory(zlib)
 
 set(PNG_SHARED OFF CACHE BOOL "Build shared lib" FORCE)
 set(PNG_TESTS OFF CACHE BOOL "Build libpng tests" FORCE)
+set(SKIP_INSTALL_ALL ON)
+set(SKIP_INSTALL_LIBRARIES ON)
 add_subdirectory(libpng)
 
 set(enable-opengl OFF CACHE BOOL "Enable OpenGL support" FORCE)
